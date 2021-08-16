@@ -11,7 +11,7 @@
 
 let secretNumber = Math.trunc(Math.random() * 25 + 1);
 let highScore = document.querySelector(".highscore").textContent;
-document.querySelector(".number").textContent = secretNumber;
+//document.querySelector(".number").textContent = secretNumber;
 
 function displayMessage(message) {
     document.querySelector(".message").textContent = message;
@@ -32,6 +32,8 @@ function userClick() {
             highScore = document.querySelector(".score").textContent;
             document.querySelector(".highscore").textContent = highScore;
         }
+        document.querySelector(".number").textContent = secretNumber;
+
 
     } else if (userGuess > secretNumber) { // Event where the guess is too high
 
